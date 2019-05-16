@@ -110,6 +110,7 @@ module Fibby
     end
 
     def key=(key)
+      super
       @children.each do |name, field|
         field.key = key[name]
       end
